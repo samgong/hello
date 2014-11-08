@@ -1,0 +1,38 @@
+This text is the note of learning git by sam.gong.
+----------------------------------------------------------------------------------
+git init	//this command will make am empty Git respository at current directory.
+
+git add A_FILE_NAME
+git commit -m "SOME_MESSAGE_ABOUT_THE_CHANGE"
+
+git status	//get the status of the current workspace.
+git diff	//learn about the differences that have been made.
+git log 
+	//print the commit log like the following.{
+		commit 3f09cd545c9861580b63069947c695841469bfc2
+		Author: sam.gong <sam.gong@126.com>
+		Date:   Sat Nov 8 15:06:07 2014 +0800
+
+		add	information about the version
+
+		commit a47d51b17e82d94ac3dc9f80491ea9486a1637df
+		Author: sam.gong <sam.gong@126.com>
+		Date:   Sat Nov 8 15:02:24 2014 +0800
+
+		add a line in readme.txt
+
+		commit 053f535e9f6897a3a3893adcac6058ee470804f9		//053f53...is the
+		COMMIT_ID.
+		Author: sam.gong <sam.gong@126.com>
+		Date:   Sat Nov 8 14:57:41 2014 +0800
+
+		wrote a readme file
+	}
+git reflog	//print the command log.
+git reset --hard COMMIT_ID
+	//note: HEAD means the current version while HEAD^ last one and HEAD^^...
+	//example{
+		git reset --hard a47d     
+		git reset --hard HEAD^^
+	}	
+
