@@ -1,2 +1,3 @@
+This is readme version 1.0.3.
 I am learning git.
-Now I change the file "readme.txt" by writing this.
+Git is a distributed version control system.
